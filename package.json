@@ -1,0 +1,30 @@
+{
+  "name": "@cssfn/jss-plugin-vendor",
+  "version": "1.0.0",
+  "description": "A plugin for JSS.",
+  "type": "module",
+  "main": "dist/jss-plugin-vendor.js",
+  "types": "dist/jss-plugin-vendor.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssfn/jss-plugin-vendor.git"
+  },
+  "keywords": [
+    "jss",
+    "css",
+    "plugin"
+  ],
+  "author": "heymarco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cssfn/jss-plugin-vendor/issues"
+  },
+  "homepage": "https://github.com/cssfn/jss-plugin-vendor#readme",
+  "dependencies": {
+    "css-vendor": "^2.0.8",
+    "jss": "^10.8.2"
+  }
+}
