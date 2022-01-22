@@ -32,7 +32,7 @@ const renameProps = (style: Style): Style => {
     
     
     
-    for (const [propName, propValue, propIndex] of Object.entries(style).map(([propName, propValue], propIndex) => [propName, propValue, propIndex] as const)) {
+    for (const [propName, propValue, propIndex] of Object.entries(style).map(([propName, propValue], propIndex) => [propName, propValue, propIndex] as const)) { // no need to iterate Symbol(s), because [prop: Symbol] is for storing nested rule
         if (propName.startsWith('--')) continue; // ignores css variable
         
         const newPropName = supportedProperty(propName);
@@ -87,7 +87,11 @@ const renameProps = (style: Style): Style => {
 
 
 
-const onProcessStyle = (style: Style, rule: Rule, sheet?: StyleSheet): Style => {
+const onProcessStyle = (style: Style|null, rule: Rule, sheet?: StyleSheet): Style => {
+    if (!style) return {};
+    
+    
+    
     return renameProps(style);
 };
 

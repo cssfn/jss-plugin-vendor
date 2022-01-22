@@ -1,6 +1,6 @@
 {
   "name": "@cssfn/jss-plugin-vendor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin for JSS.",
   "type": "module",
   "main": "dist/jss-plugin-vendor.js",
@@ -25,6 +25,6 @@
   "homepage": "https://github.com/cssfn/jss-plugin-vendor#readme",
   "dependencies": {
     "css-vendor": "^2.0.8",
-    "jss": "^10.8.2"
+    "jss": "^10.9.0"
   }
 }
